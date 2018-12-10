@@ -35,3 +35,5 @@ def aa(request):
 
 def aal(request):
     return render(request, 'blog/American Airlines Group Inc(AAL).html', {})
+
+def A(request): return render(request, 'blog/A.html', {})
