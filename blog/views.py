@@ -21,19 +21,15 @@ def index(request):
     }
     return HttpResponse(template.render(context, request))
 
-def aapl(request):
-    return render(request, 'blog/aapl.html', {})
-
-def a(request):
-    return render(request, 'blog/a.html', {})
-
-def aaba(request):
-    return render(request, 'blog/Altaba Inc(AABA).html', {})
-
-def aa(request):
-    return render(request, 'blog/Alcoa Corp(AA).html', {})
-
-def aal(request):
-    return render(request, 'blog/American Airlines Group Inc(AAL).html', {})
-
 def A(request): return render(request, 'blog/A.html', {})
+def AA(request): return render(request, 'blog/AA.html', {})
+def AABA(request): return render(request, 'blog/AABA.html', {})
+def AAC(request): return render(request, 'blog/AAC.html', {})
+def AAL(request): return render(request, 'blog/AAL.html', {})
+def AAN(request): return render(request, 'blog/AAN.html', {})
+def AAOI(request): return render(request, 'blog/AAOI.html', {})
+def AAON(request): return render(request, 'blog/AAON.html', {})
+def AAP(request): return render(request, 'blog/AAP.html', {})
+def AAPL(request): return render(request, 'blog/AAPL.html', {})
+def AAWW(request): return render(request, 'blog/AAWW.html', {})
+def AAXN(request): return render(request, 'blog/AAXN.html', {})
