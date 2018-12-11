@@ -6,8 +6,7 @@ urlpatterns = [
     #url(r'^$', views.post_list, name='post_list'),
     url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
     url(r'^$',views.index, name = 'index'),
-    url(r'^search/', include('haystack.urls')),
-
+    
     url(r'^A/$',views.A, name = 'A'),
 url(r'^AA/$',views.AA, name = 'AA'),
 url(r'^AABA/$',views.AABA, name = 'AABA'),
