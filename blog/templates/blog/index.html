@@ -19,10 +19,12 @@
     <link href='{% static "main/vendor/fontawesome-free/css/all.min.css"%}' rel="stylesheet">
     <link href='{% static "main/vendor/simple-line-icons/css/simple-line-icons.css"%}' rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href='{% static "main/css/landing-page.min.css"%}' rel="stylesheet">
 
+
+<!--검색바 만든곳 변수전달 -->
     <script type="text/javascript">
       function getElement(){
         var msg=document.getElementById("test");
@@ -37,7 +39,7 @@
     <nav class="navbar navbar-light bg-light static-top">
       <div class="container">
         <a class="navbar-brand" href="#">ValuePlusAlpha for U.S stock</a>
-        <a class="btn btn-primary" href="#">Sign In</a>
+        <a class="btn btn-primary active" href="#">실시간 주가</a>
       </div>
     </nav>
 
@@ -47,7 +49,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
-            <h1 class="mb-5">미국증시 가치투자플랫폼 서비스를 제공합니다.</h1>
+            <h1 class="mb-5">For Beautiful Investing</h1>
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
             <form>
@@ -57,7 +59,7 @@
                 </div>
                 <div class="col-12 col-md-3">
 
-                  <button type="button" onclick="location.href=getElement();" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+                  <button type="button" onclick="location.href=getElement();" class="btn btn-info btn-lg">Search Company</button>
                 </div>
               </div>
             </form>
@@ -71,30 +73,36 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
-            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-              <div class="features-icons-icon d-flex">
-                <i class="icon-screen-desktop m-auto text-primary"></i>
-              </div>
-              <h3>쉽고 간편하게</h3>
-              <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
+              <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                <div class="features-icons-icon d-flex">
+                  <i class="fas fa-chart-line fa-fw m-auto"></i>
+                </div>
+              <h3>가치투자자를 위하여</h3>
+              <p><p/>
+              <p class="lead mb-0">우리는 개인 가치투자자를 위한 </p>
+              <p class="lead mb-0">정보를 제공합니다</p>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
               <div class="features-icons-icon d-flex">
-                <i class="icon-layers m-auto text-primary"></i>
-              </div>
-              <h3>Bootstrap 4 Ready</h3>
-              <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+                  <i class="fas fa-flag-usa icon-silver fa-fw m-auto"></i>
+                  </div>
+              <h3>미국증시</h3>
+              <p><p/>
+              <p class="lead mb-0">3000개의 미국증시상장 회사들의 </p>
+              <p class="lead mb-0">정보를 만나보세요</p>
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
               <div class="features-icons-icon d-flex">
-                <i class="icon-check m-auto text-primary"></i>
+                <i class="icon-check m-auto"></i>
               </div>
-              <h3>Easy to Use</h3>
-              <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
+              <h3>쉽고, 간편하게, 무료로</h3>
+              <p><p/>
+              <p class="lead mb-0">비율에 대한 상세한 설명과 </p>
+              <p class="lead mb-0">풍부한 자료를 모두 무료로</p>
             </div>
           </div>
         </div>
@@ -106,24 +114,27 @@
       <div class="container-fluid p-0">
         <div class="row no-gutters">
 
-          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url( static 'img/bg-showcase-1.jpg');"></div>
+          <div class="col-lg-6 order-lg-2 text-white showcase-img" >
+            <img src= '{% static "main/img/bg-showcase-1.jpg" %}'></div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-            <h2>Fully Responsive Design</h2>
-            <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+            <h2>가치투자에 적합한 재무비율을 제공합니다.</h2>
+            <p class="lead mb-0">필요하고 중요한 재무비율만을 선별해 정보를 활용 할 수 있습니다.</p>
           </div>
         </div>
         <div class="row no-gutters">
-          <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
+          <div class="col-lg-6 text-white showcase-img" >
+            <img src= '{% static "main/img/bg-showcase-2.jpg" %}'></div>
           <div class="col-lg-6 my-auto showcase-text">
-            <h2>Updated For Bootstrap 4</h2>
-            <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+            <h2>최대 8년간의 재무제표 데이터를 제공합니다.</h2>
+            <p class="lead mb-0">재무제표, 손익계산서, 현금흐름표의 모든 항목을 확인 할 수 있습니다. </p>
           </div>
         </div>
         <div class="row no-gutters">
-          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-3.jpg');"></div>
+          <div class="col-lg-6 order-lg-2 text-white showcase-img">
+            <img src= '{% static "main/img/bg-showcase-3.jpg" %}'></div>
           <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-            <h2>Easy to Use &amp; Customize</h2>
-            <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+            <h2>금융정보 이외도 회사이슈,내부자,기관투자자 정보등을 제공합니다.</h2>
+            <p class="lead mb-0">ValuePlusAlpha 사이트 안에서 모든 투자 정보를 얻을 수 있습니다.</p>
           </div>
         </div>
       </div>
@@ -136,22 +147,22 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
+              <img class="img-fluid rounded-circle mb-3" src='{% static "main/img/testimonials-1.jpg" %}' alt="">
+              <h5>Park Wonwoo</h5>
+              <p class="font-weight-light mb-0">"한양대학교 경영대학 빅 인텔리전스 경영교육 사업단 CK-Ⅱ 장학생"</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src='{% static "main/img/testimonials-2.jpg" %}' alt="">
               <h5>Jang Jieun</h5>
-              <p class="font-weight-light mb-0">"한양대학교 경영대학 빅 인텔리전스 경영교육 사업단 CK-Ⅱ 장학생"</p>
+              <p class="font-weight-light mb-0">"한양대학교 경영대학 빅 인텔리전스   경영교육 사업단 CK-Ⅱ 장학생"</p>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
+              <img class="img-fluid rounded-circle mb-3" src='{% static "main/img/testimonials-3.jpg" %}' alt="">
               <h5>Song Sumin</h5>
-              <p class="font-weight-light mb-0">"한양대학교 경영대학 빅 인텔리전스 경영교육 사업단 CK-Ⅱ 장학생"</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
-              <h5>Park Wonwoo.</h5>
               <p class="font-weight-light mb-0">"한양대학교 경영대학 빅 인텔리전스 경영교육 사업단 CK-Ⅱ 장학생"</p>
             </div>
           </div>
