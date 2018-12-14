@@ -10,7 +10,7 @@ https://docs.djangoproject.com/en/2.1/howto/deployment/wsgi/
 import os
 import sys
 
-path = '/home/<wonwoo0430>/wonwoozzang'  # PythonAnywhere 계정으로 바꾸세요.
+path = '/home/wonwoo0430/wonwoozzang'  # PythonAnywhere 계정으로 바꾸세요.
 if path not in sys.path:
     sys.path.append(path)
 
